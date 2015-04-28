@@ -1,0 +1,184 @@
+@require "partials/_global.styl"
+@require "partials/_fonts.styl"
+@require "partials/_hamburger.styl"
+@require "partials/_helpers.styl"
+@require "partials/_galleries.styl"
+@require "partials/_overrides.styl"
+
+/* ==========================================================================
+	Main Styles
+   ========================================================================== */
+
+html
+	text-shadow 0 0 1px transparent
+	width 100%
+	font-size 16px
+	margin 0
+
+
+body
+	@extends html
+
+	&.admin-bar
+		#wpadminbar
+			position fixed
+			top 0
+
+
+a
+	outline 0 !important
+
+
+a:link
+a:visited
+	text-decoration none
+
+
+a:link
+	color red
+
+
+a:visited
+	color darkred
+
+
+a:hover
+a:active
+a:focus
+	text-decoration underline
+
+
+#page
+	margin 2em 0
+
+
+#site-title
+	text-align center
+	margin 0
+
+
+#site-navigation-container
+	width 100%
+	text-align center
+
+
+#site-navigation
+	list-style none
+	padding-left 0
+	margin 0
+
+	li
+		display inline-block
+		margin 0 1em
+
+		a
+			text-decoration none
+
+		a:link
+		a:visited
+			color inherit;
+
+		a:hover
+		a:active
+		a:focus
+			color red;
+
+		.sub-menu
+			position absolute
+			padding-left 0
+			line-height 1.7
+			margin-top 0.2em
+			z-index 999 !important
+
+			li
+				display block
+				margin 0
+
+
+#main
+	-wrapper(2em)
+	padding 2em 0
+	box-sizing border-box
+
+
+#primary
+#secondary
+	width 100%
+	margin 2em auto
+	position relative
+	box-sizing border-box
+
+
+#colophon
+	width 100%
+	color white
+
+	.site-info
+		margin 0
+		padding 1em 0
+		text-align center
+		line-height 1.7
+		font-size 0.9em
+
+		a
+			color inherit
+
+	#rhd-logo-footer
+		width 1.35em
+		height 1.35em
+		margin 0 0.05em
+		position relative
+		bottom 0.25em
+
+
+/* ==========================================================================
+	Posts & Pages
+   ========================================================================== */
+
+.entry-title
+.page-title
+	margin-top 0
+
+
+.entry-content
+	width 100%
+
+	p
+		&:first-child
+			margin-top 0
+
+		&:last-child
+			margin-bottom 0
+	img
+		max-width 100%
+		margin 1em
+
+		.alignleft
+			margin-left 0
+
+		.alignright
+			margin-right 0
+
+
+/* ==========================================================================
+	Widget Areas & Sidebars
+   ========================================================================== */
+
+#secondary
+	.widget
+		width 100%
+		margin-bottom 1.5em
+
+	.widget:last-child
+		margin-bottom 0
+
+
+	.widget-title
+		margin-top 0
+
+
+/* ==========================================================================
+	Extras
+   ========================================================================== */
+
+
